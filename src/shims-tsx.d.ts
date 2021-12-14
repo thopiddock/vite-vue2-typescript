@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Vue, { VNode } from 'vue'
+import Vue, { VNode } from "vue";
 
 declare global {
   namespace JSX {
@@ -8,17 +8,17 @@ declare global {
     // tslint:disable no-empty-interface
     interface ElementClass extends Vue {}
     interface IntrinsicElements {
-      [elem: string]: any
+      [elem: string]: any;
     }
   }
 }
 
 declare global {
   interface Window {
-    Protocol: any
+    Protocol: any;
   }
   interface ImportMeta {
-    env: Record<string, unknown>
-    globEager<T = unknown>(globPath: string): Record<string, T>
+    env: Record<string, unknown>;
+    globEager<T = unknown>(globPath: string): Record<string, T>;
   }
 }

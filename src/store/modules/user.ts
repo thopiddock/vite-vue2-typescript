@@ -1,36 +1,36 @@
 interface IUserProp {
-  name: string
-  age: number
+  name: string;
+  age: number;
 }
 
 interface IState {
-  user: IUserProp
+  user: IUserProp;
 }
 
 const state = {
   user: {
-    name: 'vite',
+    name: "vite",
     age: 24,
   },
-}
+};
 
 const getters = {
   userName(state: IState) {
-    return state.user.name
+    return state.user.name;
   },
-}
+};
 
 const mutations = {
   SET_USER(state: IState, value: IUserProp) {
-    state.user = value
+    state.user = value;
   },
-}
+};
 
-const actions = {}
+const actions = {};
 
 export default {
   state,
   getters,
   actions,
   mutations,
-}
+};

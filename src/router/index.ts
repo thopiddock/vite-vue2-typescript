@@ -1,14 +1,15 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from 'virtual:generated-pages'
-Vue.use(VueRouter)
+import Vue from "vue";
+import VueRouter, { RouteConfig } from "vue-router";
+Vue.use(VueRouter);
 
-const routes = setupLayouts(generatedRoutes)
+const routes: RouteConfig[] = [
+  { path: "", component: () => import("@/pages/index.vue") },
+  { path: "about", component: () => import("@/pages/about.vue") },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes,
-})
+});
 
-export default router
+export default router;

@@ -12,12 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "vite-plugin-vue-layouts/client",
-      "vite-plugin-pages/client",
-      "vite/client",
-      "unplugin-vue2-script-setup/types"
-    ],
+    "types": ["node", "vite/client", "unplugin-vue2-script-setup/types"],
     "paths": {
       "@/*": ["./src*"]
     },
